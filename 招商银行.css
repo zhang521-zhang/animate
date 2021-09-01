@@ -1,0 +1,402 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body,.swiper-container{
+    height: 100%;
+}
+.swiper-slide{
+    overflow: hidden;
+}
+.page1{
+    background: #2a7bea;
+}
+.page1 img:nth-of-type(1){
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.page1 img:nth-child(2){
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform: scale(90%);
+}
+.page1 img:nth-child(n+3):nth-child(-n+4){
+    width: 100%;
+    position: absolute;
+    transform: scale(90%);
+}
+.page1 img:nth-of-type(5){
+    width: 80%;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+.page1 div:nth-of-type(1){
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    left: 25%;
+    top: 10%;
+    background: url(img1/indexTxt.png) no-repeat;
+    background-size: contain ;
+}
+.page1 div:nth-of-type(1) .frright{
+    position: absolute;
+    width: 23%;
+    left: 75%;
+    top: 45%;
+    height: auto;
+}
+.page1 div:nth-of-type(1) .frleft{
+    position: absolute;
+    width: 25%;
+    left: -17%;
+    top: 8%;
+}
+@keyframes suofang{
+    0%{}
+
+    50%{transform: scale(100%);}
+    100%{transform: scale(90%);}
+}
+.animated.suofang{
+    animation-name: suofang;
+    animation-iteration-count: infinite;
+}
+.jiantou{
+    width: 12%;
+    position: absolute;
+    top: 90%;
+    left: 45%;
+}
+@keyframes jiantou{
+    0%{}
+    70%{transform: translateY(-50%);}
+    100%{transform: translateY(-50%);opacity: 0;}
+}
+.animated.jiantou{
+    animation-name: jiantou;
+    animation-iteration-count: infinite;
+}
+.music{
+    width: 12%;
+    position: absolute;
+    top: 1%;
+    left: 86%;
+    animation-iteration-count: infinite;
+}
+/*-----------------------第二章--------------------------------*/
+.page2{
+    background: url(img1/wasBg.jpg) no-repeat;
+    background-size: cover;
+}
+.page2 img:nth-of-type(1){
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 30%;
+}
+.page2 img:nth-of-type(2){
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    top: 45%;
+}
+.page2 img:nth-of-type(3){
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+/*-----------------------------第三章----------------------------------------*/
+.page3{
+    position: relative;
+    background: black;
+}
+.manone,.mantwo,.manthree{
+    width: 100%;
+    height: 100%;
+    background: black;
+    position: absolute;
+}
+.manone{
+    z-index: 5;
+}
+.mantwo{
+    z-index: 4;
+}
+.manthree{
+    z-index: 3;
+}
+.manone img:nth-of-type(1),.mantwo img:nth-of-type(1){
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+.manone img:nth-of-type(2),.mantwo img:nth-of-type(4){
+    position: absolute;
+    top: 10%;
+    width: 35%;
+}
+.mantwo img:nth-of-type(2){
+    position: absolute;
+    top: 65%;
+    width: 70%;
+}
+.mantwo img:nth-of-type(3){
+    position: absolute;
+    top: 80%;
+    left: 60%;
+    width: 30%;
+}
+
+.manthree img:nth-of-type(1){
+    width: 100%;
+    position: absolute;
+}
+.manthree img:nth-of-type(2){
+    width: 28%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.manthree img:nth-of-type(3){
+    width: 30%;
+    position: absolute;
+    right: 5%;
+    top: 20%;
+}
+.manthree img:nth-of-type(4){
+    width: 13%;
+    position: absolute;
+    right: 70%;
+    top: 30%;
+}
+.manthree img:nth-of-type(5){
+    width: 20%;
+    position: absolute;
+    right: 63%;
+    top: 35%;
+}
+.manthree img:nth-of-type(6){
+    width: 20%;
+    position: absolute;
+    right: 63%;
+    top: 42%;
+}
+.manthree img:nth-of-type(7){
+    width: 20%;
+    position: absolute;
+    right: 63%;
+    top: 49%;
+}
+.manthree img:nth-of-type(8){
+    width: 50%;
+    position: absolute;
+    right: 25%;
+    top: 75%;
+}
+/*-----------------------------------第四章------------------------------------------*/
+.page4 img:nth-of-type(1){
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.page4 img:nth-of-type(2){
+    width: 20%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.page4 img:nth-of-type(3){
+    width: 50%;
+    position: absolute;
+    right: 0%;
+    top: 5%;
+}
+.page4 p:nth-of-type(1){
+    width: 50%;
+    height: 3%;
+    position: absolute;
+    right: 25%;
+    top: 40%;
+}
+.page4 p:nth-of-type(1) img{
+    width: 100%;
+    animation-iteration-count: infinite;
+}
+.qianjing{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 2;
+    transition: all 1s 1s;
+}
+.houjing{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background: #046fd4;
+}
+.page4 #ludeng{
+    width: 35%;
+    height: 75%;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    z-index: 5;
+}
+.houjing img:nth-of-type(1){
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    opacity: 0;
+    transition: all 2s 2.5s;
+}
+.houjing img:nth-of-type(2){
+    width: 25%;
+    position: absolute;
+    right: 10%;
+    bottom: 0%;
+    opacity: 0;
+    transition: all 1s 3s;
+}
+.houjing img:nth-of-type(3){
+    width: 50%;
+    position: absolute;
+    right: 25%;
+    top: 35%;
+    opacity: 0;
+    transition: all 1s 2s;
+}
+/*-------------------------------第五章----------------------------------------*/
+.page5 img:nth-of-type(1),.page6 img:nth-of-type(1){
+    width: 100%;
+    height: 100%;
+}
+.page5 img:nth-of-type(2){
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+}
+.page5 img:nth-of-type(3){
+    position: absolute;
+    left: 40%;
+    top: 20%;
+    width: 50%;
+}
+.page5 img:nth-of-type(4),.page5 img:nth-of-type(5){
+    width: 100%;
+}
+.page5 div:nth-of-type(1){
+    position: absolute;
+    left: 18%;
+    top: 50%;
+    width: 60%;
+    height: 14%;
+}
+/*----------------------------第六章------------------------------------*/
+.page6 img:nth-of-type(2){
+    position: absolute;
+    left: 15%;
+    top: 20%;
+    width: 30%;
+}
+.page6 div:nth-of-type(1)  img:nth-of-type(1),.page6 div:nth-of-type(1) img:nth-of-type(2){
+    position: absolute;
+    width: 100%;
+}
+.page6 div:nth-of-type(1){
+    position: absolute;
+    left: 10%;
+    top: 60%;
+    width: 60%;
+    height: 15%;
+}
+/*---------------------------第七章-----------------------------------------*/
+.page7{
+    height: 100%;
+    background: #27B484;
+}
+.page7 img:nth-of-type(1){
+    width: 100%;
+    position: absolute;
+}
+.page7 img:nth-of-type(2){
+    width: 50%;
+    position: absolute;
+    left: 20%;
+    top: 7%;
+}
+.page7 .qian,.page7 .hou{
+    position: absolute;
+    width: 100%;
+}
+.page7 div:nth-of-type(1){
+    position: absolute;
+    left: 10%;
+    top: 70%;
+    width: 80%;
+    height: 15%;
+}
+/*------------------------第八章------------------------------------*/
+.page8{
+    height: 100%;
+    background: #A3DEF1;
+}
+.page8 div:nth-of-type(1){
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    width: 96%;
+    height: 70%;
+    background: #ED7C70;
+    border-radius: 5px;
+    color: white;
+}
+.page8 p:nth-of-type(1){
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    width: 96%;
+    height: 94%;
+    background: #EA3B21;
+    border-radius: 5px;
+    color: white;
+}
+.page8 img:nth-of-type(1){
+    position: absolute;
+    left: 3%;
+    top: 3%;
+    width: 20%;
+    animation-iteration-count: infinite;
+}
+.page8 img:nth-of-type(2){
+    position: absolute;
+    left: 25%;
+    top: 5%;
+    width: 50%;
+}
+.page8 img:nth-of-type(3){
+    position: absolute;
+    top: 8%;
+    left: 5%;
+    width: 90%;
+    height: 70%;
+}
+.page8 img:nth-of-type(4){
+    position: absolute;
+    bottom: 20%;
+    right: 35%;
+    width: 12%;
+    animation-iteration-count: infinite;
+}
+.page8 img:nth-of-type(5){
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 40%;
+}
